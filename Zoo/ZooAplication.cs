@@ -3,6 +3,7 @@ using ConsoleUtils.Interfaces;
 using Domain.Builders;
 using Domain.Directors;
 using Domain.Entities;
+using Domain.Services;
 
 namespace Zoo;
 
@@ -14,14 +15,14 @@ public class ZooApplication(
 {
     public void Run()
     {
-        // Для демонстрации добавляем несколько предметов
+        // Для демонстрации автоматически добавляем несколько предметов
         zoo.AddThing(new Table());
         zoo.AddThing(new Computer());
 
         bool exit = false;
         while (!exit)
         {
-            menuService.DisplayMainMenu();
+            DisplayMainMenu();
             int selection = menuService.GetMainMenuSelection();
 
             switch (selection)
@@ -46,6 +47,9 @@ public class ZooApplication(
                     Pause();
                     break;
                 case 6:
+                    AddThing();
+                    break;
+                case 7:
                     exit = true;
                     break;
                 default:
@@ -53,6 +57,23 @@ public class ZooApplication(
                     break;
             }
         }
+    }
+
+    private void DisplayMainMenu()
+    {
+        Console.Clear();
+        outputService.WriteLine("Выберите действие:", ConsoleColor.Yellow);
+        string[] actions =
+        {
+            "Добавить новое животное",
+            "Показать общее количество животных",
+            "Показать суммарное потребление еды (кг/сутки)",
+            "Показать животных, подходящих для контактного зоопарка",
+            "Показать список всех инвентарных объектов",
+            "Добавить предмет",
+            "Завершить программу"
+        };
+        outputService.OutputCatalog(actions);
     }
 
     private void AddAnimal()
@@ -133,6 +154,45 @@ public class ZooApplication(
             {
                 outputService.WriteError("Животное отклонено ветеринарной клиникой.");
             }
+        }
+        Pause();
+    }
+
+    private void AddThing()
+    {
+        Console.Clear();
+        outputService.WriteLine("Выберите тип предмета для добавления:", ConsoleColor.Yellow);
+        string[] types = { "Стул", "Компьютер" };
+        outputService.OutputCatalog(types);
+        outputService.WriteLine("Нажмите соответствующую цифру для выбора:", ConsoleColor.White);
+
+        var key = inputService.ReadKey();
+        Console.WriteLine();
+
+        Thing newThing = null;
+        switch (key.Key)
+        {
+            case ConsoleKey.D1:
+            case ConsoleKey.NumPad1:
+                {
+                    newThing = new Table();
+                    break;
+                }
+            case ConsoleKey.D2:
+            case ConsoleKey.NumPad2:
+                {
+                    newThing = new Computer();
+                    break;
+                }
+            default:
+                outputService.WriteError("Неверный выбор типа предмета.");
+                return;
+        }
+
+        if (newThing != null)
+        {
+            zoo.AddThing(newThing);
+            outputService.WriteLine("Предмет успешно добавлен!", ConsoleColor.Green);
         }
         Pause();
     }
