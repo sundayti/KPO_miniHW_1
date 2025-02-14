@@ -59,7 +59,7 @@ public class ZooApplication(
     {
         Console.Clear();
         outputService.WriteLine("Выберите тип животного для добавления:", ConsoleColor.Yellow);
-        string[] types = { "Обезьяна (Monkey)", "Кролик (Rabbit)", "Тигр (Tiger)", "Волк (Wolf)" };
+        string[] types = { "Обезьяна", "Кролик", "Тигр", "Волк" };
         outputService.OutputCatalog(types);
         outputService.WriteLine("Нажмите соответствующую цифру для выбора:", ConsoleColor.White);
 
