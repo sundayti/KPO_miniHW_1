@@ -1,0 +1,11 @@
+/Users/tomtim/Documents/projectsOnMac/Pankratov_2310_HW_1/ConsoleUtils/bin/Debug/net9.0/ConsoleUtils.deps.json
+/Users/tomtim/Documents/projectsOnMac/Pankratov_2310_HW_1/ConsoleUtils/bin/Debug/net9.0/ConsoleUtils.dll
+/Users/tomtim/Documents/projectsOnMac/Pankratov_2310_HW_1/ConsoleUtils/bin/Debug/net9.0/ConsoleUtils.pdb
+/Users/tomtim/Documents/projectsOnMac/Pankratov_2310_HW_1/ConsoleUtils/obj/Debug/net9.0/ConsoleUtils.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tomtim/Documents/projectsOnMac/Pankratov_2310_HW_1/ConsoleUtils/obj/Debug/net9.0/ConsoleUtils.AssemblyInfoInputs.cache
+/Users/tomtim/Documents/projectsOnMac/Pankratov_2310_HW_1/ConsoleUtils/obj/Debug/net9.0/ConsoleUtils.AssemblyInfo.cs
+/Users/tomtim/Documents/projectsOnMac/Pankratov_2310_HW_1/ConsoleUtils/obj/Debug/net9.0/ConsoleUtils.csproj.CoreCompileInputs.cache
+/Users/tomtim/Documents/projectsOnMac/Pankratov_2310_HW_1/ConsoleUtils/obj/Debug/net9.0/ConsoleUtils.dll
+/Users/tomtim/Documents/projectsOnMac/Pankratov_2310_HW_1/ConsoleUtils/obj/Debug/net9.0/refint/ConsoleUtils.dll
+/Users/tomtim/Documents/projectsOnMac/Pankratov_2310_HW_1/ConsoleUtils/obj/Debug/net9.0/ConsoleUtils.pdb
+/Users/tomtim/Documents/projectsOnMac/Pankratov_2310_HW_1/ConsoleUtils/obj/Debug/net9.0/ref/ConsoleUtils.dll

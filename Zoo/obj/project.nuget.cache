@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "k/azGKeoSZw=",
+  "success": true,
+  "projectFilePath": "/Users/tomtim/Documents/projectsOnMac/Pankratov_2310_HW_1/Zoo/Zoo.csproj",
+  "expectedPackageFiles": [
+    "/Users/tomtim/.nuget/packages/microsoft.extensions.dependencyinjection/9.0.2/microsoft.extensions.dependencyinjection.9.0.2.nupkg.sha512",
+    "/Users/tomtim/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.2/microsoft.extensions.dependencyinjection.abstractions.9.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
